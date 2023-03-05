@@ -1,0 +1,477 @@
+@import url("../extensions/fontawesome/css/all.min.css");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+b {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display SC';
+}
+
+h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #464646;
+  margin-bottom: 30px;
+  font-weight: 500;
+  letter-spacing: 10px;
+}
+
+a {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 20px;
+  color: inherit;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+header {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding-left: 20px;
+  width: 950px;
+  margin: 0 auto;
+  background-color: #3d3d3d;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+header a:hover {
+  opacity: 0.7;
+}
+
+header i {
+  margin-right: 20px;
+  color: inherit;
+}
+
+main {
+  width: 950px;
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 50px;
+  background-color: #fff;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  max-width: 950px;
+  min-width: 320px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: flex-start;
+  /* border: 1px solid #ccc;
+  -webkit-box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.3); */
+  border-top: none;
+  background-color: #fff;
+}
+
+main h1 {
+  text-align: center;
+  width: 100%;
+}
+
+main ul {
+  margin-bottom: 30px;
+}
+
+main ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Gilroy';
+  font-weight: 400;
+}
+
+main ul li:last-child {
+  margin-bottom: 0;
+}
+
+main ul li ul {
+  margin-top: 10px;
+}
+
+main ul li ul li {
+  opacity: 0.8;
+}
+
+main ul li img {
+  margin-bottom: 6px;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+main h2 {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-bottom: 20px;
+}
+
+main h2 i {
+  color: #55772c;
+  font-size: 24px;
+}
+
+main h2 a {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #55772c;
+}
+
+main h3 {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main h3:hover {
+  opacity: 0.6;
+}
+
+main .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+main .technologies ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .technologies ul li {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+  font-weight: bold;
+}
+
+main .technologies i {
+  color: #5f8532;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+footer {
+  max-width: 950px;
+  margin: 0 auto;
+  height: 80px;
+  line-height: 80px;
+  background-color: #3d3d3d;
+  text-align: center;
+}
+
+footer a {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.pazzle-game {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.pazzle-game .timer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  color: #4d4d4d;
+}
+
+.pazzle-game .controls {
+  text-align: center;
+  width: 100%;
+}
+
+.pazzle-game .controls button {
+  border: 1px solid #c7ffd3;
+  outline: none;
+  padding: 7px 15px;
+  margin: 0 20px;
+  color: #fff;
+  background-color: red;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.pazzle-game .controls button:disabled {
+  border: none;
+  background-color: tomato;
+  color: white;
+  cursor: default;
+}
+
+.pazzle-game .controls button:active {
+  opacity: 0.95;
+}
+
+.pazzle-game .game-block {
+  width: 100%;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.pazzle-game ul {
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 0 0 10px 1px #3d3d3d;
+  box-shadow: 0 0 10px 1px #3d3d3d;
+  /* border-radius: 4px; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.pazzle-game ul li {
+  width: 75px;
+  height: 75px;
+  color: transparent;
+  margin: 0;
+}
+
+.pazzle-game #arsenal {
+  display: none;
+}
+
+.pazzle-game #right li {
+  background: none;
+}
+
+.pazzle-game .ars-1 {
+  background: url("../images/arsenal.jpg") no-repeat 0px 0px;
+}
+
+.pazzle-game .ars-2 {
+  background: url("../images/arsenal.jpg") no-repeat -75px 0;
+}
+
+.pazzle-game .ars-3 {
+  background: url("../images/arsenal.jpg") no-repeat -150px 0;
+}
+
+.pazzle-game .ars-4 {
+  background: url("../images/arsenal.jpg") no-repeat -225px 0px;
+}
+
+.pazzle-game .ars-5 {
+  background: url("../images/arsenal.jpg") no-repeat 0px -75px;
+}
+
+.pazzle-game .ars-6 {
+  background: url("../images/arsenal.jpg") no-repeat -75px -75px;
+}
+
+.pazzle-game .ars-7 {
+  background: url("../images/arsenal.jpg") no-repeat -150px -75px;
+}
+
+.pazzle-game .ars-8 {
+  background: url("../images/arsenal.jpg") no-repeat -225px -75px;
+}
+
+.pazzle-game .ars-9 {
+  background: url("../images/arsenal.jpg") no-repeat 0px -150px;
+}
+
+.pazzle-game .ars-10 {
+  background: url("../images/arsenal.jpg") no-repeat -75px -150px;
+}
+
+.pazzle-game .ars-11 {
+  background: url("../images/arsenal.jpg") no-repeat -150px -150px;
+}
+
+.pazzle-game .ars-12 {
+  background: url("../images/arsenal.jpg") no-repeat -225px -150px;
+}
+
+.pazzle-game .ars-13 {
+  background: url("../images/arsenal.jpg") no-repeat 0px -225px;
+}
+
+.pazzle-game .ars-14 {
+  background: url("../images/arsenal.jpg") no-repeat -75px -225px;
+}
+
+.pazzle-game .ars-15 {
+  background: url("../images/arsenal.jpg") no-repeat -150px -225px;
+}
+
+.pazzle-game .ars-16 {
+  background: url("../images/arsenal.jpg") no-repeat 100% 100%;
+}
+
+.pazzle-game .active {
+  background-color: #ccc;
+}
+
+.pazzle-game .modal-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-color: #000000c9;
+  display: none;
+}
+
+.pazzle-game .modal-container .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pazzle-game .modal-container .modal {
+  width: 50%;
+  text-align: center;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pazzle-game .modal-container .modal .message {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 30px 0;
+  margin: 20px 0px;
+  font-size: 30px;
+  display: none;
+}
+
+.pazzle-game .modal-container .modal .message .timer {
+  display: inline;
+  font-size: inherit;
+  color: inherit;
+}
+
+.pazzle-game .modal-container .modal button {
+  color: #fff;
+  margin: 0 10px;
+  margin: 10px 0;
+}
+
+.pazzle-game .modal-container .modal button#close {
+  display: none;
+}
+
+.pazzle-game .modal-container .modal #check {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

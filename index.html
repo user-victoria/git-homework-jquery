@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Завдання 1</title>
+</head>
+<body>
+    <main>
+        <div class="pazzle-game">
+            <h1 class="timer">01:00</h1>
+            <div class="controls">
+                <button id="start">Start game!</button>
+                <button id="checkResult" disabled>Check result</button>
+                <button id="new">New game</button>
+            </div>
+            <div class="game-block">
+                <ul class="list" id="left">
+                    <li class="ars-1">1</li>
+                    <li class="ars-2">2</li>
+                    <li class="ars-3">3</li>
+                    <li class="ars-4">4</li>
+                    <li class="ars-5">5</li>
+                    <li class="ars-6">6</li>
+                    <li class="ars-7">7</li>
+                    <li class="ars-8">8</li>
+                    <li class="ars-9">9</li>
+                    <li class="ars-10">10</li>
+                    <li class="ars-11">11</li>
+                    <li class="ars-12">12</li>
+                    <li class="ars-13">13</li>
+                    <li class="ars-14">14</li>
+                    <li class="ars-15">15</li>
+                    <li class="ars-16">16</li>
+                </ul>
+                <ul class="list" id="right">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="modal-container">
+                <div class="d-flex">
+                    <div class="modal">
+                        <div class="message" id="success">Woohoo, well done, you did it!</div>
+                        <div class="message" id="haveTime">You still have time, you sure? <div class="timer">00:00</div>
+                        </div>
+                        <div class="message" id="lost">It's a pity, but you lost</div>
+                        <div class="controls">
+                            <button id="cancel">Cancel</button>
+                            <button id="close">Close</button>
+                            <button id="check">Check</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
